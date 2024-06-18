@@ -1,6 +1,5 @@
 
 
-
 window.addEventListener("load", () => {
         const loadspeech = new SpeechSynthesisUtterance();
         loadspeech.text ="Initializing System";
@@ -13,6 +12,7 @@ window.addEventListener("load", () => {
         const errorspeech = new SpeechSynthesisUtterance();
         errorspeech.text ="no input..";
         window.speechSynthesis.speak(errorspeech);
+        
 
         }
         const convertspeech = new SpeechSynthesisUtterance();
