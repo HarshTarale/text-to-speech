@@ -55,8 +55,9 @@
     
 } 
 menu{
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+
 } 
 #dialogClose{
     padding: 1vw 2vw;
@@ -91,6 +92,9 @@ menu{
 #text:focus{
     border:solid 2px rgba(255, 242, 0, 0.874);
 }
+.btns{
+    display: flex;
+gap: 10px;}
 #btn{
     border: none;
     outline: none;

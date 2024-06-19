@@ -10,17 +10,21 @@
  <div class="hero">
    <dialog id="myDialog" >
         <form method="dialog" id="formDialog"  >
-         <h1>Inisializing System ..</h1>
+         <h1>Initialising System ..</h1>
          <center> <div class="loader"> </div></center> 
          <menu>
               <button id="dialogClose">Exsit..</button>
+            
         </menu>
         </form>
     </dialog>
     <main class="content">
         <textarea name="text" id="text" placeholder="Type..."></textarea>
-        <button id="btn" onclick={speech()} >Speech</button>
+        <div class="btns">
+              <button id="btn" onclick={speech()} >Speech</button>
 
+              <button  id="btn" onclick={recoder()}>Reco</button>
+        </div>
     </main>
 </div>
     
