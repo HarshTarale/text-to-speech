@@ -17,7 +17,7 @@
 }
 #myDialog{
     margin-top: 5vw;
-    margin-left:30vw ;
+    margin-left:25vw ;
     background-color: rgba(255, 255, 255, 0.678);
     border: none;
     border-radius: 10px;
@@ -25,6 +25,7 @@
 }
 
 #formDialog{
+    min-width: 250px;
     width: 40vw;
     background-color: rgba(255, 255, 255, 0.658);
     display: flex;
@@ -38,8 +39,9 @@
     width: 5vw;
     height: 5vw;
     border-top:solid 5px;
+    border-bottom: solid 5px;
     border-radius: 50%;
-    animation: spin 0.4s  linear  infinite;
+    animation: spin 0.8s  linear  infinite;
     margin: 6vw;
     
     

@@ -1,17 +1,15 @@
 
 const  myDialog = document.getElementById("myDialog");
 const dialogCloseBtn =document.getElementById("dialogClose")
-
 window.addEventListener("load", () => {
        dialogOpen();
 
 setTimeout(()=>{
        console.log("load");
-       const errorspeech = new SpeechSynthesisUtterance();
+       const errorspeech = new SpeechSynthesisUtterance(); 
        errorspeech.text ="Initialising System ..";
        window.speechSynthesis.speak(errorspeech);    
 },1000);
-
 });
 
 const dialogOpen =()=>{
