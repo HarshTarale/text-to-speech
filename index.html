@@ -3,32 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgmic.png">
+    <title>speech converter</title>
+    <link rel="stylesheet" href="style.css">              <!-- css  file link-->
 </head>
 <body>
- <div class="hero">
-   <dialog id="myDialog" >
+ <div class="hero">      
+  <dialog id="myDialog" >     <!--dialod box        -->
         <form method="dialog" id="formDialog"  >
          <h1>Initialising System ..</h1>
          <center> <div class="loader"> </div></center> 
          <menu>
-              <button id="dialogClose">Exsit..</button>
+              <button id="dialogClose">Exit..</button>
             
         </menu>
         </form>
     </dialog>
     <main class="content">
-        <textarea name="text" id="text" placeholder="Type..."></textarea>
-        <img src="imgmic.png" id="imgmic" />
+        <textarea name="text" id="text" placeholder="Type..."></textarea>      <!-- text shower  -->
+        <img src="imgmic.png" id="imgmic" />                                   <!-- mic img-->
+        
+        <select id="languageSelect_1">                                           <!-- language Selecter-->
+            <option value="en-US">English (United States)</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="es-MX">Spanish (Mexico)</option>
+            <option value="fr-FR">French (France)</option>
+            <option value="de-DE">German (Germany)</option>
+            <option value="zh-CN">Chinese (Simplified)</option>
+            <option value="zh-TW">Chinese (Traditional)</option>
+            <option value="ja-JP">Japanese</option>
+            <option value="ko-KR">Korean</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="pt-BR">Portuguese (Brazil)</option>
+            <option value="pt-PT">Portuguese (Portugal)</option>
+            <option value="it-IT">Italian</option>
+            <option value="ru-RU">Russian</option>
+            <option value="ar-SA">Arabic</option>
+        </select>
         <div class="btns">
-              <button id="btn1" onclick={speech()} >Speech</button>
+              <button id="btn1" onclick={speech()} >Speech</button>       <!-- speak btn-->
 
-              <button  id="btn2"  onclick={recoder()} >Reco</button>
+              <button  id="btn2"  onclick={recoder()} >Reco</button>        <!-- recoding btn-->
+
         </div>
     </main>
 </div>
     
 </body>
-<script src="script.js"></script>
+<script src="script.js"></script>          <!-- javascript file link-->
 </html>
