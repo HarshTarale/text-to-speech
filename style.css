@@ -92,10 +92,32 @@ menu{
 #text:focus{
     border:solid 2px rgba(255, 242, 0, 0.874);
 }
+#imgmic{
+min-width: 20px;
+    max-width: 50px;
+    visibility: hidden ;
+    animation: mic 0.7s infinite alternate;
+
+    
+}
+@keyframes mic {
+    0%{
+        opacity: 0.2;
+    }
+    
+}
 .btns{
     display: flex;
 gap: 10px;}
-#btn{
+#btn1{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:yellow ;
+    padding: 1vw 2vw;
+
+}
+#btn2{
     border: none;
     outline: none;
     border-radius: 5px;

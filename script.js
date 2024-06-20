@@ -1,10 +1,11 @@
 
 const  myDialog = document.getElementById("myDialog");
-const dialogCloseBtn =document.getElementById("dialogClose")
+const dialogCloseBtn =document.getElementById("dialogClose");
 
 
 
-window.addEventListener("load", () => {
+
+document.addEventListener("DOMContentLoaded", () => {
        dialogOpen();
        setTimeout(()=>{speaker("Initialising System ..")},1000);
 
@@ -18,30 +19,37 @@ const speaker=(text)=>{
 const dialogOpen =()=>{
        myDialog.showModal();
 }
+dialogCloseBtn.addEventListener("click",()=>{
+       speaker("how can  i help you today ")
+})
 
  const speech =()=>{
        const  textin = document.getElementById("text").value.trim();
-
+       imgmic.style.visibility="hidden";
         if(textin==""){     
-       
-       speaker("no input..")
+              speaker("no input..")
         } else {
               speaker(textin);
         }
  }
 
 const recoder =()=>{
-
-       var recoding = new webkitSpeechRecognition();
+       imgmic.style.visibility="visible";
+       const recoding = new webkitSpeechRecognition();
        recoding.lang = "en-US";
        recoding.onresult= (event)=>{
               const valuo = event.results[0][0].transcript;
               document.getElementById("text").value=valuo;
+              // setTimeout(()=>{
+                     imgmic.style.visibility="hidden";
+              // },5000)
               speaker(valuo)
+
        }
        
        recoding.start();
        console.log("ok")  
 
 }
+
 
